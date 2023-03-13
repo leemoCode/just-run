@@ -135,7 +135,7 @@ const uninstallLongTouch = function (el: Element, binding: DirectiveBinding): vo
 };
 
 export const useLongTouch: Directive = {
-    // 映射到mounted unmounted上
+  // 映射到mounted unmounted上
   mounted: initLongTouch,
   unmounted: uninstallLongTouch,
 };

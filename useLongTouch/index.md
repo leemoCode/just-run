@@ -12,6 +12,6 @@ touchStart时注册延时函数，延时触发长按事件
 
 全局通过:
 const app = createApp(this.App);
-app.directivez('longTouch', useLongTouch); 注入指令
+app.directive('longTouch', useLongTouch); 注入指令
 
-后续通过v-longtouch使用
+vue文件内通过v-longtouch使用
