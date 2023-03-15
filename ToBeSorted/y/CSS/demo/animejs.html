@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+  <title>Template</title>
+  <style>
+    .box1 {
+      width: 50%;
+      height: 200px;
+      background: #22DC8D;
+
+      margin: 0 auto;
+    }
+
+    .box2 {
+      width: 50%;
+      height: 200px;
+      background: red;
+
+      float: left;
+    }
+
+    .box3 {
+      width: 50%;
+      height: 200px;
+      background: pink;
+
+      float: right;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box1"></div>
+  <div class="box2"></div>
+  <div class="box3"></div>
+  <div class="demo">111</div>
+</body>
+
+</html>
+<script type="text/javascript" src="js/anime.min.js"></script>
+<script>
+  var logEl = document.querySelector('.demo');
+
+  console.log(logEl);
+
+  var battery = {
+    charged: '0%',
+    cycles: 120
+  }
+
+  anime({
+    targets: battery,
+    charged: '100%',
+    cycles: 130,
+    round: 1,
+    easing: 'linear',
+    update: function () {
+      logEl.innerHTML = JSON.stringify(battery);
+    }
+  });
+
+</script>

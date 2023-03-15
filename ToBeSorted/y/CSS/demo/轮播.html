@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+不用一行js也能解决上下游动效果 可以试试 代码很简单
+
+
+<style>
+  .div1 {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+  }
+
+  @keyframes anis {
+    100% {
+      transform: translateY(-200px)
+    }
+  }
+
+  img {
+    position: absolute;
+  }
+
+
+  .div2 {
+    animation: anis 3s linear infinite;
+  }
+
+  /* .div2:hover {
+    animation-play-state: paused;
+  } */
+</style>
+
+
+
+
+<div class="div1">
+  <div class="div2">
+    <p>你来了</p>
+    <p>你来了</p>
+    <p>你来了</p>
+    <p>你来了</p>
+    <p>你来了</p>
+    <p>你来了</p>
+    <p>你来了</p>
+    <p>你来了</p>
+    <p>你来了</p>
+  </div>
+</div>
+
+希望能帮到你们！！！
+
+
+</html>
